@@ -6,7 +6,7 @@ sumOfPowers:
 
     mov %rdi, %rbx
     mov $0, %rax
-    move $1, %rcx
+    mov $1, %rcx
 
 Top:
     #comparison input, iterator
