@@ -4,7 +4,10 @@ compareAges:
     push %rbp
     mov %rsp, %rbp
 
-    cmp %rdi, %rsi
+    mov 4(%rdi), %eax
+    mov 4(%rsi), %edx
+
+    cmp %eax, %edx
 
     je Equal 
     jl SecondGreater
