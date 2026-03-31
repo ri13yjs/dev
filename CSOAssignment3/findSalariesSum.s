@@ -11,8 +11,9 @@ Top:
     cmp %rsi, %rcx
     jge Done
 
-    movl 8(%rdi) %eax
-    add %rdx, %rcx
+    movl 8(%rdi) %edx
+    addq %rdx, %rax
+    addq $12, %rdi
     inc %rcx
     jmp Top
 
